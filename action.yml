@@ -26,5 +26,5 @@ inputs:
     default: 'true'
 runs:
   using: 'node20'
-  main: 'lib/index.js'
-  post: 'lib/cleanup/index.js'
+  main: 'dist/index.js'
+  post: 'dist/cleanup/index.js'

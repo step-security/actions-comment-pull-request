@@ -186,7 +186,7 @@ See [jobs.<job_id>.permissions](https://docs.github.com/en/actions/using-workflo
 
 ### Build
 
-The build steps transpiles the `src/main.ts` to `lib/index.js` which is used in a NodeJS environment.
+The build steps transpiles the `src/main.ts` to `dist/index.js` which is used in a NodeJS environment.
 It is handled by `vercel/ncc` compiler.
 
 ```sh

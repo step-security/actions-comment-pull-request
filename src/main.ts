@@ -8,10 +8,9 @@ import { validateSubscription } from './utils';
 const REACTIONS = ['+1', '-1', 'laugh', 'confused', 'heart', 'hooray', 'rocket', 'eyes'] as const;
 type Reaction = (typeof REACTIONS)[number];
 
-
 async function run() {
   try {
-    await validateSubscription()
+    await validateSubscription();
     const message: string = core.getInput('message');
     const filePath: string = core.getInput('file-path');
     const githubToken: string = core.getInput('github-token');
