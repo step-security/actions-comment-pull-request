@@ -2,11 +2,11 @@
   "name": "actions-comment-pull-request",
   "version": "3.0.1",
   "description": "GitHub action for commenting pull-request",
-  "main": "lib/main.js",
+  "main": "dist/main.js",
   "scripts": {
     "build": "npm run build:main && npm run build:cleanup",
-    "build:main": "ncc build src/main.ts -o lib",
-    "build:cleanup": "ncc build src/cleanup.ts -o lib/cleanup",
+    "build:main": "ncc build src/main.ts -o dist",
+    "build:cleanup": "ncc build src/cleanup.ts -o dist/cleanup",
     "lint": "prettier --write **/*.ts"
   },
   "repository": {
